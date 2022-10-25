@@ -1,0 +1,106 @@
+:root {
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+  "main aside"
+  "main aside";
+  grid-template-columns: auto 100vh;
+  grid-template-rows: auto auto;
+
+  font-family: 'League Spartan', sans serif;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+.o-main {
+  grid-area: main;
+}
+
+.title {
+  display: flex;
+  padding: 50px 30px;
+  align-items: center;
+}
+
+.title #rocketnews-logo img {
+  width: 150px;
+}
+
+.title #rocketnews {
+  padding-left: 30px;
+}
+
+.content {
+  padding: 30px 1px 1px 30px;
+}
+
+.content #text1 {
+  color: var(--title-color);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+.content #text2 {
+  color: var(--text-color);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+}
+
+.content #text3 {
+  color: var(--text-color);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+}
+
+.send #mail-fill {
+  color: var(--form-color);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+  margin-top: 60px;
+  padding-left: 30px;
+  position: absolute;
+}
+
+.send #mail-fill input {
+  width: 100vh;
+  height: 3.6rem;
+}
+
+.send #mail-send{
+  float: right;
+}
+
+.send #mail-send button{
+  height: 4rem;
+  width: 4rem;
+}
+
+.more {
+  position:relative;
+  margin-top: 15rem;
+  padding: 0 0 0 30px;
+}
+
+.more #button-arrow {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  width: 200px;
+  color: var(--bg-button-color);
+  background-color: var(--body-bg-color);
+  border: none;
+}
+
+.o-aside {
+  grid-area: aside;
+}
+
+.o-aside img {
+  height: 100vh;
+}
