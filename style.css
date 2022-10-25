@@ -30,11 +30,8 @@ body {
 }
 
 .title #rocketnews-logo img {
-  width: 150px;
-}
-
-.title #rocketnews {
-  padding-left: 30px;
+  margin-top: 2rem;
+  width: 450px;
 }
 
 .content {
@@ -89,9 +86,9 @@ body {
 }
 
 .more #button-arrow {
+  font-size: 20px;
   font-family: 'League Spartan', sans-serif;
   font-weight: 700;
-  width: 200px;
   color: var(--bg-button-color);
   background-color: var(--body-bg-color);
   border: none;
