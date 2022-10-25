@@ -30,7 +30,7 @@ body {
 }
 
 .title #rocketnews-logo img {
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 450px;
 }
 
@@ -67,7 +67,10 @@ body {
 
 .send #mail-fill input {
   width: 100vh;
-  height: 3.6rem;
+  height: 3.8rem;
+  border: none;
+  border-left: 10px solid;
+  border-left-color: var(--title-color);
 }
 
 .send #mail-send{
@@ -77,6 +80,8 @@ body {
 .send #mail-send button{
   height: 4rem;
   width: 4rem;
+  background-color: var(--bg-button-color);
+  border: none;
 }
 
 .more {
@@ -92,10 +97,16 @@ body {
   color: var(--bg-button-color);
   background-color: var(--body-bg-color);
   border: none;
+  display: flex;
+  align-items:center;
 }
 
 .o-aside {
   grid-area: aside;
+  background-image: url(./assets/read_news.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .o-aside img {
